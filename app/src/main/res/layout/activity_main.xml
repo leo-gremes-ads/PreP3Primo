@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_titulo"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/label_digite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_digite"
+        android:layout_width="275dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/informe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_digitaNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_titulo" />
+
+    <Button
+        android:id="@+id/btn_verificar"
+        android:layout_width="189dp"
+        android:layout_height="62dp"
+        android:text="@string/verificar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/label_resposta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_digitaNumero" />
+
+    <EditText
+        android:id="@+id/et_digitaNumero"
+        android:layout_width="237dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_digite"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/label_resposta"
+        android:layout_width="344dp"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_viewer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_verificar" />
+
+    <ImageView
+        android:id="@+id/img_viewer"
+        android:layout_width="335dp"
+        android:layout_height="172dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_resposta"
+        app:srcCompat="@drawable/sim_primo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

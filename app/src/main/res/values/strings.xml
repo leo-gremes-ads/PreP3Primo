@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PreP3Primo</string>
+    <string name="Titulo">VERIFICADOR DE NÚMEROS PRIMOS</string>
+    <string name="verificar">Verificar</string>
+    <string name="informe">Digite um número positivo:</string>
+    <string name="naoPositivo">Por favor, digite um número positivo!</string>
+    <string name="ehPrimo">É um número primo!</string>
+    <string name="negativo">NÃO é um número primo!</string>
+</resources>
